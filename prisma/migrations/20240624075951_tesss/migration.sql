@@ -13,11 +13,10 @@ CREATE TABLE "Bus" (
     "id" TEXT NOT NULL,
     "userId" TEXT NOT NULL,
     "jam" TEXT NOT NULL,
-    "date" TIMESTAMP(3) NOT NULL,
     "from" TEXT NOT NULL,
+    "date" TEXT NOT NULL,
     "to" TEXT NOT NULL,
     "price" INTEGER NOT NULL,
-    "total_tiket" INTEGER NOT NULL,
 
     CONSTRAINT "Bus_pkey" PRIMARY KEY ("id")
 );
@@ -26,9 +25,9 @@ CREATE TABLE "Bus" (
 CREATE TABLE "Tiket" (
     "id" TEXT NOT NULL,
     "NIK" TEXT NOT NULL,
-    "date" TIMESTAMP(3) NOT NULL,
     "gender" TEXT NOT NULL,
     "phone" TEXT NOT NULL,
+    "total_tiket" INTEGER NOT NULL,
     "userId" TEXT NOT NULL,
     "busId" TEXT NOT NULL,
 
